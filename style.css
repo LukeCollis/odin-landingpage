@@ -1,5 +1,6 @@
 body {
      font-family: 'Roboto',  sans-serif;
+     margin: 0;
 }
 
 .header, .top-container {
@@ -32,9 +33,64 @@ body {
     color: #f9faf8;
 }
 
-.top-container h1 {
-    font-size: 48px;
-    color: #f9faf8;
-    font-weight: 900px;
+.top-container{
+    display: flex;
+    padding: 150px 200px;
+    gap: 48px;
 }
 
+.top-left-side{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+
+.top-right-side{
+    flex: 1;
+    background-color: #9ca3af;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    position: relative;
+}
+
+.top-right-side::after {
+    content: "This is a placeholder for an image";
+    color: #4b5563;
+    font-size: 16px;
+}
+
+.top-right-side img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.top-container h1{
+    font-size: 48px;
+    color: #f9faf8;
+}
+
+.top-left-side p {
+    font-weight: 400;
+    color: #e5e7eb;
+}
+
+.top-left-side button{
+    font-weight: 700;
+    background-color: #3882F6;
+    border-radius: 25px;
+    color: #f9faf8;
+    align-self: flex-start;
+}
+
+.top-left-side h1,
+.top-left-side p,
+.top-left-side button {
+    margin: 0;
+}
