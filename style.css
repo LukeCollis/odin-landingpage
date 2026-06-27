@@ -3,7 +3,7 @@ body {
      margin: 0;
 }
 
-.header, .top-container {
+.header, .top-container, .footer {
     background-color: #1F2937;
 }
 
@@ -99,7 +99,7 @@ body {
 .upper-middle-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 48px 200px;
+    padding: 48px 300px;
     gap: 24px;
 }
 
@@ -127,5 +127,63 @@ body {
     padding-top: 8px;
 }
 
+.lower-middle-container {
+    background-color: #e5e7eb;
+    padding: 48px 300px;
+}
+
+.lower-middle-container h3 {
+    text-align: center;
+    margin: 0 0 8px 0;
+    font-weight: 300;
+}
+
+.lower-middle-container p {
+    text-align: right;
+    font-size: 14px;
+    color: black;
+    margin: 0; 
+}
+
+.bottom-container {
+    margin: 100px 300px;
+    background-color: #3882f6;
+    padding: 48px;
+    border-radius: 12px;
+}
+
+
+.sign-up-prompt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign-up-left h2,
+.sign-up-left p {
+    margin: 0;
+    color: white;
+}
+
+.sign-up-right button {
+    background-color: #3882F6;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.footer{
+    text-align: center;
+    font-weight: 300;
+    color: #e5e7eb;
+    font-size: 10px;
+    padding: 40px 40px;
+}
+
+.footer h1{
+    margin: 0;
+}
 
 
